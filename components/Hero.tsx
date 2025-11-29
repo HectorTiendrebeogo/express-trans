@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { COMPANY_NAME } from "@/lib/constants";
 
 export default function Hero() {
     return (
@@ -40,7 +41,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-xl text-zinc-300 mb-8 max-w-xl leading-relaxed">
-                        Express Trans est votre partenaire de confiance pour tous vos besoins logistiques urbains.
+                        {COMPANY_NAME} est votre partenaire de confiance pour tous vos besoins logistiques urbains.
                         Nous connectons les quartiers de Ouagadougou avec efficacité.
                     </p>
 

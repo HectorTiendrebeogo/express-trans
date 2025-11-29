@@ -5,7 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #FF5F00; /* Vibrant Orange */
+  --primary: #FF5F00;
+  /* Vibrant Orange */
   --primary-foreground: #ffffff;
   --secondary: #f4f4f5;
   --secondary-foreground: #18181b;

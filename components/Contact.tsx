@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Phone, Mail, Facebook, MessageCircle } from "lucide-react";
+import { COMPANY_NAME } from "@/lib/constants";
 
 export default function Contact() {
     const contacts = [
@@ -24,7 +25,7 @@ export default function Contact() {
         {
             icon: <Facebook size={32} />,
             title: "Facebook",
-            value: "Express Trans BF",
+            value: `${COMPANY_NAME} BF`,
             href: "https://facebook.com",
             color: "bg-blue-600",
             textColor: "text-blue-600"

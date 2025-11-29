@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Bike, Briefcase, CheckCircle, Truck, FileCheck, Smile } from "lucide-react";
 import Link from "next/link";
+import { COMPANY_NAME } from "@/lib/constants";
 
 export default function Partners() {
     return (
@@ -70,7 +71,7 @@ export default function Partners() {
                         </div>
                         <h4 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4">Entreprises Partenaires</h4>
                         <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-                            Optimisez votre logistique et bénéficiez d'avantages exclusifs en collaborant avec Express Trans.
+                            Optimisez votre logistique et bénéficiez d'avantages exclusifs en collaborant avec {COMPANY_NAME}.
                         </p>
 
                         <h5 className="font-semibold text-zinc-900 dark:text-white mb-4">Vos avantages :</h5>

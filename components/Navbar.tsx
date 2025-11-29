@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Truck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { COMPANY_NAME } from "@/lib/constants";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,8 +29,8 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? "bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md py-4"
-                    : "bg-transparent py-6"
+                ? "bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md py-4"
+                : "bg-transparent py-6"
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
@@ -38,7 +39,7 @@ export default function Navbar() {
                         <Truck size={24} />
                     </div>
                     <span className="text-2xl font-bold tracking-tighter">
-                        Express<span className="text-primary">Trans</span>
+                        {COMPANY_NAME.split(' ')[0]}<span className="text-primary">{COMPANY_NAME.split(' ').slice(1).join(' ')}</span>
                     </span>
                 </Link>
 

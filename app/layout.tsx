@@ -12,8 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { COMPANY_NAME } from "@/lib/constants";
+
 export const metadata: Metadata = {
-  title: "Express Trans - Transport de Marchandises à Ouagadougou",
+  title: `${COMPANY_NAME} - Transport de Marchandises à Ouagadougou`,
   description: "Service de transport rapide, sécurisé et fiable à Ouagadougou. Estimez vos coûts de livraison en ligne.",
 };
 

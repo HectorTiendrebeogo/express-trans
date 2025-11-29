@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Target, Users, Award, TrendingUp } from "lucide-react";
+import { COMPANY_NAME } from "@/lib/constants";
 
 export default function About() {
     const features = [
@@ -39,11 +40,11 @@ export default function About() {
                     >
                         <h2 className="text-primary font-semibold tracking-wide uppercase mb-3">À Propos de Nous</h2>
                         <h3 className="text-4xl font-bold text-zinc-900 dark:text-white mb-6 leading-tight">
-                            Express Trans : L'Excellence au Service de la Logistique
+                            {COMPANY_NAME} : L'Excellence au Service de la Logistique
                         </h3>
                         <p className="text-zinc-600 dark:text-zinc-400 text-lg mb-6 leading-relaxed">
                             Fondée avec l'ambition de révolutionner le transport de marchandises à Ouagadougou,
-                            Express Trans est née d'un constat simple : le besoin crucial d'un service fiable,
+                            {COMPANY_NAME} est née d'un constat simple : le besoin crucial d'un service fiable,
                             rapide et transparent pour les échanges inter-quartiers.
                         </p>
                         <p className="text-zinc-600 dark:text-zinc-400 text-lg mb-8 leading-relaxed">

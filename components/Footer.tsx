@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Truck, Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { COMPANY_NAME } from "@/lib/constants";
 
 export default function Footer() {
     return (
@@ -13,7 +14,7 @@ export default function Footer() {
                                 <Truck size={24} />
                             </div>
                             <span className="text-2xl font-bold tracking-tighter">
-                                Express<span className="text-primary">Trans</span>
+                                {COMPANY_NAME.split(' ')[0]}<span className="text-primary">{COMPANY_NAME.split(' ').slice(1).join(' ')}</span>
                             </span>
                         </Link>
                         <p className="text-zinc-400 leading-relaxed mb-6">
@@ -62,7 +63,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-zinc-800 pt-8 text-center text-zinc-500 text-sm">
-                    <p>&copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> Express Trans. Tous droits réservés.</p>
+                    <p>&copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> {COMPANY_NAME}. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>
